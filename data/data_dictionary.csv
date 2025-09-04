@@ -1,0 +1,61 @@
+Column,Type,Non_Null_Count,Null_Count,Missing_Percentage,Unique_Values,Description
+academic_year,Int64,147,0,0.0,3,Academic year
+student_id,object,147,0,0.0,136,Student ID (8-char hash based on name)
+first_name,object,147,0,0.0,94,First name
+last_name,object,147,0,0.0,130,Last name
+repeater,object,18,129,87.76,9,Original repeater column (replaced by is_repeater)
+test_p4,float64,140,7,4.76,4,Test score for p4 (0-1 scale)
+test_p5,float64,123,24,16.33,4,Test score for p5 (0-1 scale)
+test_p6,float64,129,18,12.24,4,Test score for p6 (0-1 scale)
+test_p7,float64,124,23,15.65,4,Test score for p7 (0-1 scale)
+test_p8,float64,103,44,29.93,4,Test score for p8 (0-1 scale)
+test_p9,float64,122,25,17.01,4,Test score for p9 (0-1 scale)
+test_p10,float64,99,48,32.65,4,Test score for p10 (0-1 scale)
+test_p11,float64,101,46,31.29,4,Test score for p11 (0-1 scale)
+test_p12,float64,92,55,37.41,4,Test score for p12 (0-1 scale)
+test_p13,float64,110,37,25.17,4,Test score for p13 (0-1 scale)
+num_tests_taken,Int64,147,0,0.0,11,Number of tests attempted (including zeros)
+avg_success_rate_per_test,float64,147,0,0.0,89,Average success rate per test
+percentage_points,float64,147,0,0.0,56,Percentage of points
+fc_total_points,float64,147,0,0.0,56,FC total points
+team,float64,53,94,63.95,18,Team assignment
+presentation_points,float64,145,2,1.36,9,Presentation points (max 10)
+defense_points,float64,140,7,4.76,21,Defense points (max 30)
+total_defense_points,object,147,0,0.0,41,Total defense score
+exam_k2,float64,145,2,1.36,21,Exam K2 score
+exam_k3,float64,127,20,13.61,22,Exam K3 score
+exam_k2_k3_total,float64,128,19,12.93,35,Other data
+total_continuous,float64,94,53,36.05,77,Total continuous assessment
+final_grade,Int64,145,2,1.36,5,Final grade (1-5)
+survey_q1,object,102,45,30.61,21,Survey question 1
+survey_q2,object,102,45,30.61,21,Survey question 2
+survey_q3,object,102,45,30.61,49,Survey question 3
+survey_q4,object,147,0,0.0,84,Survey question 4
+survey_q5,int64,147,0,0.0,5,Survey question 5
+survey_q6,int64,147,0,0.0,5,Survey question 6
+survey_q7,object,147,0,0.0,3,Survey question 7
+survey_q8,int64,147,0,0.0,10,Survey question 8
+survey_q9,int64,147,0,0.0,10,Survey question 9
+survey_q10,int64,147,0,0.0,10,Survey question 10
+survey_q11,int64,147,0,0.0,10,Survey question 11
+survey_q12,object,147,0,0.0,5,Survey question 12
+survey_q13,object,147,0,0.0,5,Survey question 13
+survey_q14,object,147,0,0.0,4,Survey question 14
+survey_q15,int64,147,0,0.0,10,Survey question 15
+survey_q16,int64,147,0,0.0,10,Survey question 16
+survey_q17,object,146,1,0.68,121,Survey question 17
+survey_q18,object,147,0,0.0,11,Survey question 18
+survey_q19,object,146,1,0.68,139,Survey question 19
+survey_q20,object,52,95,64.63,2,Survey question 20
+student_order,int64,147,0,0.0,53,Original ordinal student number within year
+is_repeater,bool,147,0,0.0,2,"Repeater status (True=repeating year, False=first time)"
+full_name,object,147,0,0.0,136,Full name (created feature)
+total_test_score,float64,147,0,0.0,61,"Total test score (sum of all tests, created feature)"
+avg_test_score,float64,144,3,2.04,92,"Average test score (mean of all tests, created feature)"
+test_completion_rate,Float64,147,0,0.0,11,Test score for completion_rate (0-1 scale)
+passed,Int64,145,2,1.36,2,"Pass indicator (1=passed, 0=failed, created feature)"
+grade_category,category,145,2,1.36,5,"Grade category (Fail/Sufficient/Good/Very Good/Excellent, created feature)"
+performance_category,category,94,53,36.05,4,Performance category based on continuous assessment (created feature)
+positive_tests_taken,int64,147,0,0.0,11,Number of tests with positive (non-zero) scores
+negative_tests_taken,int64,147,0,0.0,6,Number of tests with negative scores (data quality issue)
+noshow_tests_taken,int64,147,0,0.0,11,Other data
