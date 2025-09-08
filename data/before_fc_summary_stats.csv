@@ -1,0 +1,4 @@
+academic_year,n_students,mean_grade,std_grade,pass_rate,pass_rate_pct
+2018,46,1.848,1.382,0.348,34.8
+2019,62,1.339,1.023,0.113,11.3
+2020,52,1.577,1.194,0.212,21.2

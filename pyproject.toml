@@ -20,6 +20,8 @@ dependencies = [
     "openpyxl>=3.1.0",
     "xlrd>=2.0.1",
     "pyarrow>=15.0.0",
+    "tabulate>=0.9.0",
+    "kaleido>=0.2.1",
 ]
 
 [dependency-groups]
